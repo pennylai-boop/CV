@@ -1,0 +1,93 @@
+/* 作品集：延伸履歷 CV 的綠色 × 咖啡復古版型 */
+:root{
+  --forest:#3f5236; --forest-2:#55704a; --sage:#e4e9d6;
+  --coffee:#6b4528; --caramel:#c9a77c; --cream:#fbf6ea; --cream-2:#f3e8d2;
+  --text:#3a2c22; --muted:#7a6a5a; --rule:#d6c4a6;
+}
+body{background-color:#e9dfcc}
+
+/* 紙張外框（同履歷） */
+.folio{max-width:1080px;margin:44px auto;background:var(--cream);border:1px solid var(--rule);outline:6px double var(--rule);outline-offset:6px;box-shadow:0 20px 60px rgba(58,44,34,.18)}
+.folio .wrap{max-width:none;padding:0 52px}
+
+/* 封面：同履歷左側綠色欄 */
+.folio .pf-hero{background:var(--forest);color:var(--cream-2);border-bottom:0}
+.folio .pf-hero .wrap{padding-top:52px;padding-bottom:46px}
+.folio .pf-hero .eyebrow{color:var(--caramel);letter-spacing:.24em;padding-bottom:8px;border-bottom:3px double var(--caramel);display:inline-block}
+.folio .pf-hero h1{color:#fbf3e2;font-family:"Noto Serif TC",Georgia,serif;font-weight:900;letter-spacing:.06em;margin-top:18px!important}
+.folio .pf-hero h1 em{color:#e3c08f}
+.folio .pf-hero p{color:rgba(243,232,210,.85)}
+.folio .chain div{background:transparent;border:1px solid rgba(201,167,124,.55);border-radius:4px}
+.folio .chain b{color:#e3c08f;font-family:"Noto Serif TC",Georgia,serif;font-size:28px}
+.folio .chain span{color:var(--cream-2)}
+
+/* 目錄 */
+.folio .toc{position:sticky;top:64px;background:var(--cream-2);border-bottom:3px double var(--rule)}
+.folio .toc a{background:var(--cream);border:1px solid var(--rule);border-radius:3px;color:var(--coffee);font-family:"Noto Serif TC",Georgia,serif}
+.folio .toc a:hover{background:var(--sage);border-color:var(--forest-2);color:var(--forest)}
+
+/* 作品區塊 */
+.folio .product{background:transparent!important;padding:64px 0;border-bottom:3px double var(--rule)}
+.folio-no{font-family:"Noto Serif TC",Georgia,serif;font-weight:700;color:var(--forest-2);letter-spacing:.2em;font-size:13px;margin-bottom:22px;display:flex;align-items:center;gap:14px}
+.folio-no::after{content:"";flex:1;height:0;border-top:3px double var(--rule)}
+.folio .p-title{color:var(--coffee);font-family:"Noto Serif TC",Georgia,serif;font-weight:900;letter-spacing:.04em}
+.folio .p-title span{color:var(--forest-2);font-family:"Noto Sans TC",sans-serif;font-weight:700}
+.folio .p-tagline{color:var(--forest);font-family:"Noto Serif TC",Georgia,serif}
+.folio .p-desc{color:var(--text);line-height:1.9}
+.folio .p-shot{border:1px solid var(--rule);outline:4px double var(--rule);outline-offset:4px;border-radius:2px;padding:8px;background:#fdf9f0;box-shadow:0 10px 26px rgba(58,44,34,.14)}
+
+/* 小節標題：同履歷 r-h */
+.folio .sub{margin-top:46px}
+.folio .sub h3{font-family:"Noto Serif TC",Georgia,serif;color:var(--coffee);font-size:20px;letter-spacing:.08em;padding-bottom:6px;border-bottom:3px double var(--rule)}
+.folio .sub h3 i{color:var(--forest-2);letter-spacing:.2em}
+
+/* 卡片 */
+.folio .card{background:#fdf9f0;border:1px solid var(--rule);border-radius:4px;box-shadow:none}
+.folio .feat .ic,.folio .feat:nth-child(even) .ic{width:38px;height:38px;border-radius:50%;background:var(--cream);border:2px solid var(--forest);color:var(--forest);font-family:"Noto Serif TC",Georgia,serif;font-size:14px}
+.folio .feat h4{color:var(--coffee)}
+.folio .feat p{color:var(--muted)}
+.folio .role-box h4{color:var(--coffee)}
+.folio .role-box li::marker{color:var(--forest-2)}
+
+/* 標籤 */
+.folio .chip{border-radius:3px;background:var(--cream);border-color:var(--rule);color:var(--coffee)}
+.folio .chip.blue{background:var(--sage);color:var(--forest)}
+.folio .chip.orange{background:var(--cream-2);color:var(--coffee);border-color:var(--caramel)}
+.folio .chip a{color:inherit}
+
+/* 截圖：拍立得相框 */
+.folio .gallery figure{background:#fdf9f0;border:1px solid var(--rule);border-radius:2px;padding:8px 8px 0;box-shadow:0 4px 12px rgba(58,44,34,.08)}
+.folio .gallery figure:nth-child(odd){transform:rotate(-.6deg)}
+.folio .gallery figure:nth-child(even){transform:rotate(.6deg)}
+.folio .gallery figure:hover{transform:rotate(0) translateY(-3px)}
+.folio .gallery img{border:1px solid #eadfcb}
+.folio .gallery figcaption{border-top:0;text-align:center;font-family:"Noto Serif TC",Georgia,serif;color:var(--coffee);padding:10px 6px 12px}
+
+/* 比較表 */
+.folio .compare{background:#fdf9f0;border-color:var(--rule);border-radius:4px}
+.folio .compare thead th{background:var(--cream-2);color:var(--coffee);font-family:"Noto Serif TC",Georgia,serif}
+.folio .compare thead th.us{background:var(--forest);color:#fbf3e2}
+.folio .compare td.us{background:var(--sage);color:var(--forest)}
+.folio .compare td:first-child{color:var(--coffee);font-family:"Noto Serif TC",Georgia,serif}
+.folio .compare th,.folio .compare td{border-bottom-color:#e6d9c3}
+
+/* 示意視窗 */
+.folio .mock{background:#fdf9f0;border-color:var(--rule);border-radius:4px}
+.folio .mock-bar{background:var(--cream-2)}
+.folio .mock-rows em{background:var(--sage);color:var(--forest);border-radius:3px}
+.folio .mock-note a{color:var(--forest);font-weight:700}
+
+/* 結尾 */
+.folio #custom{padding:56px 0}
+.folio .cta-band{background:var(--forest);border-radius:4px;border:0;outline:3px double rgba(201,167,124,.6);outline-offset:-10px;color:var(--cream-2)}
+.folio .cta-band h3{color:#fbf3e2;font-family:"Noto Serif TC",Georgia,serif;letter-spacing:.06em}
+.folio .btn-primary{background:var(--coffee);box-shadow:0 3px 0 #4a2f1b}
+.folio .btn-dark{border-color:rgba(201,167,124,.6);color:var(--cream-2)}
+
+@media(max-width:860px){
+  .folio{margin:0;outline:0;border:0;box-shadow:none}
+  .folio .wrap{padding:0 16px}
+  .folio .gallery figure{transform:none!important}
+}
+@media print{body{background:#fff}.folio{margin:0;box-shadow:none;outline:0}.nav,.toc,.lb{display:none}}
+.folio .toc{top:64px;border-top:0}

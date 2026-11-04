@@ -1,0 +1,12 @@
+.env
+.env.*
+.git
+.gitignore
+*.log
+Dockerfile
+README.md
+*.pptx
+*.ppt
+*.pdf
+assets/works/_pptx
+*.zip

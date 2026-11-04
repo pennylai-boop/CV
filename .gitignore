@@ -1,0 +1,11 @@
+.env
+.env.*
+*.log
+Thumbs.db
+.DS_Store
+*.pptx
+*.ppt
+*.pdf
+assets/works/_pptx/
+_*/
+*.zip

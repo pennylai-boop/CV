@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>賴佩伶 Penny Lai｜履歷</title>
+<meta name="description" content="賴佩伶 履歷：產品經理 / AI 工程師，世新大學數位多媒體設計學系動畫組畢業，7~8 年工作經驗，從 3D 動畫跨足 AI 全端系統開發。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  :root{
+    --forest:#3f5236; --forest-2:#55704a; --sage:#e4e9d6;
+    --coffee:#6b4528; --caramel:#c9a77c; --cream:#fbf6ea; --cream-2:#f3e8d2;
+    --text:#3a2c22; --muted:#7a6a5a; --rule:#d6c4a6;
+  }
+  body{background-color:#e9dfcc}
+  .resume{max-width:1000px;margin:44px auto;background:var(--cream);display:grid;grid-template-columns:330px 1fr;border:1px solid var(--rule);outline:6px double var(--rule);outline-offset:6px;box-shadow:0 20px 60px rgba(58,44,34,.18)}
+  .side{background:var(--forest);padding:38px 30px 44px;color:var(--cream-2)}
+  .main{padding:38px 46px 52px;color:var(--text)}
+  .r-h{font-family:"Noto Serif TC",Georgia,serif;font-weight:900;font-size:21px;letter-spacing:.14em;margin:0 0 16px;padding-bottom:6px}
+  .side .r-h{color:var(--cream-2);border-bottom:3px double var(--caramel)}
+  .main .r-h{color:var(--coffee);border-bottom:3px double var(--rule);margin-top:40px}
+  .main .r-h:first-child{margin-top:0}
+  .r-h small{font-size:14px;letter-spacing:.06em;color:var(--forest-2);margin-left:10px;font-weight:700}
+  .side .r-h small{color:var(--caramel)}
+  .photo{width:190px;height:190px;border-radius:50%;margin:8px auto 22px;overflow:hidden;background:var(--cream-2);border:6px solid var(--cream-2);outline:2px solid var(--caramel);outline-offset:4px}
+  .photo img{width:100%;height:100%;object-fit:cover}
+  .name{font-family:"Noto Serif TC",Georgia,serif;font-weight:900;font-size:38px;line-height:1.2;color:#fbf3e2;margin:0;letter-spacing:.08em}
+  .name small{display:block;font-size:18px;font-weight:700;color:var(--caramel);letter-spacing:.06em;margin-top:2px}
+  .title{color:#e3c08f;font-weight:700;margin:12px 0 0;font-size:15px;line-height:1.6}
+  .side section+section{margin-top:32px}
+  .side ul{margin:0 0 6px;padding-left:20px}
+  .side li{margin:4px 0;font-size:14.5px}
+  .side li::marker{color:var(--caramel)}
+  .side a{color:var(--cream-2)}
+  .side h4{margin:16px 0 6px;font-size:15px;font-weight:700;color:#e3c08f;font-family:"Noto Serif TC",Georgia,serif;letter-spacing:.06em}
+  .contact{list-style:none;padding:0!important}
+  .contact li{display:flex;gap:10px;align-items:flex-start;word-break:break-all}
+  .contact svg{flex:none;width:16px;height:16px;margin-top:4px;fill:var(--caramel)}
+  .lang{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:14.5px}
+  .lang b{color:#fbf3e2}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+  .tags span{font-size:12.5px;padding:2px 9px;border:1px solid rgba(201,167,124,.55);border-radius:3px;color:var(--cream-2)}
+
+  .about p{margin:0 0 14px;font-size:15px;line-height:1.9;color:var(--text);text-align:justify}
+  .about b{color:var(--coffee);font-family:"Noto Serif TC",Georgia,serif;display:block;font-size:16px;margin-bottom:4px}
+  .highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}
+  .highlights div{border:1px solid var(--rule);background:#fdf9f0;padding:12px 14px;border-radius:4px}
+  .highlights strong{display:block;font-family:"Noto Serif TC",Georgia,serif;font-size:24px;color:var(--forest)}
+  .highlights span{font-size:13px;color:var(--muted)}
+
+  .xp-item{display:grid;grid-template-columns:96px 1fr;gap:0 24px;position:relative;padding-bottom:26px}
+  .xp-item::before{content:"";position:absolute;left:108px;top:8px;bottom:-8px;width:2px;background:var(--forest-2);opacity:.6}
+  .xp-item::after{content:"";position:absolute;left:103px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--cream);border:2px solid var(--forest)}
+  .xp-item:last-child::before{display:none}
+  .xp-date{font-weight:700;font-size:13.5px;color:var(--forest);text-align:right;line-height:1.5;font-family:"Noto Serif TC",Georgia,serif}
+  .xp-date em{display:block;font-style:normal;font-weight:500;color:var(--muted);font-size:12.5px;font-family:"Noto Sans TC",sans-serif}
+  .xp-body{padding-left:10px}
+  .xp-title{font-weight:700;font-size:17.5px;color:var(--coffee);font-family:"Noto Serif TC",Georgia,serif}
+  .xp-org{font-weight:700;color:var(--forest);font-size:15px;margin-top:2px}
+  .xp-meta{font-size:13px;color:var(--muted);margin-top:2px}
+  .xp-desc{color:var(--text);font-size:14.5px;margin-top:8px}
+  .xp-desc ul{margin:0;padding-left:18px}
+  .xp-desc li{margin:3px 0}
+  .xp-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+  .xp-tags span{font-size:12px;padding:2px 8px;border-radius:3px;background:var(--sage);color:var(--forest)}
+
+  .skill-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+  .skill-card{border:1px solid var(--rule);background:#fdf9f0;border-radius:4px;padding:14px 16px}
+  .skill-card h4{font-family:"Noto Serif TC",Georgia,serif;color:var(--coffee);font-size:15.5px;margin-bottom:6px}
+  .skill-card p{font-size:14px;color:var(--text);margin:0;line-height:1.8}
+
+  .works{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+  .work{display:flex;gap:12px;align-items:center;padding:12px;border:1px solid var(--rule);border-radius:4px;color:var(--text);background:#fdf9f0}
+  .work:hover{background:var(--sage);text-decoration:none}
+  .work img{width:44px;height:44px;object-fit:cover;border-radius:4px;background:#fff;flex:none}
+  .work img.logo{object-fit:contain;padding:2px}
+  .work b{display:block;font-size:15px;font-family:"Noto Serif TC",Georgia,serif;color:var(--coffee)}
+  .work span{font-size:13px;color:var(--muted)}
+  .to-pf{display:inline-block;margin-top:16px;font-weight:700;color:var(--forest)}
+
+  @media(max-width:860px){
+    .resume{grid-template-columns:1fr;margin:0;outline:0;border:0;box-shadow:none}
+    .side,.main{padding:28px 16px}
+    .highlights,.skill-grid,.works{grid-template-columns:1fr}
+    .xp-item{grid-template-columns:78px 1fr;gap:0 18px}
+    .xp-item::before{left:88px}.xp-item::after{left:83px}
+  }
+  @media print{body{background:#fff}.resume{margin:0;box-shadow:none;outline:0}.nav{display:none}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">賴佩伶 Penny Lai</a>
+    <nav class="nav-links">
+      <a href="index.html" class="active">履歷 CV</a>
+      <a href="portfolio.html">作品集</a>
+    </nav>
+  </div>
+</header>
+
+<article class="resume">
+  <!-- ========== 左側欄 ========== -->
+  <aside class="side">
+    <section>
+      <h2 class="r-h">PROFILE</h2>
+      <div class="photo"><img src="assets/photo.jpg" alt="賴佩伶"></div>
+      <h1 class="name">賴佩伶<small>Penny Lai</small></h1>
+      <div class="title">Product Manager 產品經理<br>AI 工程師 ／ 全端系統開發</div>
+    </section>
+
+    <section>
+      <h2 class="r-h">CONTACT</h2>
+      <ul class="contact">
+        <li><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 013 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg><a href="tel:0913675509">0913-675-509</a></li>
+        <li><svg viewBox="0 0 24 24"><path d="M2 5h20v14H2zm2 2v.5l8 5 8-5V7l-8 5z"/></svg><a href="mailto:x94qo4xu6@gmail.com">x94qo4xu6@gmail.com</a></li>
+        <li><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/></svg>新北市五股區</li>
+        <li><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm6.9 6h-2.9a15.7 15.7 0 00-1.4-3.6A8 8 0 0118.9 8zM12 4c.8 1.2 1.5 2.5 1.9 4h-3.8c.4-1.5 1.1-2.8 1.9-4zM4.3 14a8.2 8.2 0 010-4h3.4a16.5 16.5 0 000 4zm.8 2h2.9c.3 1.3.8 2.5 1.4 3.6A8 8 0 015.1 16zM8 8H5.1a8 8 0 014.3-3.6C8.8 5.5 8.3 6.7 8 8zm4 12c-.8-1.2-1.5-2.5-1.9-4h3.8c-.4 1.5-1.1 2.8-1.9 4zm2.3-6H9.7a14.7 14.7 0 010-4h4.6a14.7 14.7 0 010 4zm.3 5.6c.6-1.1 1.1-2.3 1.4-3.6h2.9a8 8 0 01-4.3 3.6zm1.7-5.6a16.5 16.5 0 000-4h3.4a8.2 8.2 0 010 4z"/></svg><a href="https://x94qo4xu6.wixsite.com/pennylai" target="_blank" rel="noopener">x94qo4xu6.wixsite.com/pennylai</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="r-h">SKILLS</h2>
+      <h4>AI 工具</h4>
+      <ul><li>Claude</li><li>Gemini</li><li>ChatGPT</li><li>MidJourney</li></ul>
+      <h4>開發</h4>
+      <ul>
+        <li>Next.js / Node.js</li>
+        <li>Three.js（3D 網頁）</li>
+        <li>MySQL / Supabase</li>
+        <li>GCP 雲端 / API 串接</li>
+        <li>GitHub</li>
+      </ul>
+      <h4>多媒體設計</h4>
+      <ul>
+        <li>MAYA / After Effects / Nuke</li>
+        <li>Premiere / Vegas</li>
+        <li>Flash / Painter</li>
+        <li>Mental Ray / V-Ray / Arnold / Redshift</li>
+      </ul>
+      <h4>影像與文書</h4>
+      <ul>
+        <li>Photoshop / Illustrator</li>
+        <li>PowerPoint / Word / Excel</li>
+        <li>Mac OS / Windows</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="r-h">LANGUAGE</h2>
+      <div class="lang">
+        <b>英文</b><span>聽、說、讀、寫／略懂</span>
+        <b>台語</b><span>中等</span>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="r-h">OTHERS</h2>
+      <h4>駕駛執照</h4>
+      <ul><li>普通重型機車駕照</li><li>普通小型車駕照</li></ul>
+      <h4>工作技能</h4>
+      <div class="tags">
+        <span>AI 系統建置</span><span>全端工程建置</span><span>Next.js</span><span>ERP 進銷存建置</span><span>網站製作</span><span>產品訪談需求規劃</span><span>系統測試與上線</span><span>軟體推廣業務</span><span>Prompt</span><span>MLOps</span>
+      </div>
+    </section>
+  </aside>
+
+  <!-- ========== 右側主欄 ========== -->
+  <div class="main">
+
+    <h2 class="r-h">PROFILE <small>專業摘要</small></h2>
+    <div class="highlights">
+      <div><strong>7~8 年</strong><span>總工作年資</span></div>
+      <div><strong>20 人</strong><span>帶領過的製作團隊規模</span></div>
+      <div><strong>3D → AI</strong><span>從動畫製作轉型全端與 AI 系統</span></div>
+    </div>
+    <div class="about">
+      <p><b>專業摘要與跨領域優勢</b>畢業於世新大學數位多媒體設計學系動畫組，累積七至八年工作經驗，現職為新橋創想影像科技股份有限公司的產品經理與 AI 工程師。職涯從 3D 動畫製作起步，逐步跨足專案管理，最終轉型為全端與 AI 系統工程師。這樣的跨領域背景，讓我除了具備紮實的系統開發能力，更擁有視覺空間邏輯、使用者體驗敏銳度，以及深厚的團隊統籌經驗。</p>
+      <p><b>厚實的專案管理與視覺製作底蘊</b>在轉型為軟體工程師之前，我深耕影視動畫產業多年，曾任職於即思影像與新橋影像設計等公司，擔任燈光合成組長及製作主管。期間負責 3D 物件的打光與合成，並帶領約 20 人的製作團隊，主導專案進度管理、成本控管與工作分配。擔任製作主管的五年期間，進一步接洽業務並建立公司制度，具備帶領中階主管與跨部門溝通的管理能力，也深知如何將抽象的客戶需求具象化為可執行的專案目標。</p>
+      <p><b>AI 技術導入與全端系統開發實力</b>順應技術發展，我將職涯重心轉向 AI 應用與系統架構開發，熟練運用 Claude、Gemini、ChatGPT 等 AI 工具進行自動化系統設計與開發整合。程式開發上熟悉 Next.js 框架與全端工程建置，能處理 MySQL 與 Supabase 資料庫建置、GCP 雲端環境與 API 串接。得益於動畫背景，也擅長 Three.js，能獨立開發具備 3D 互動內容的網頁系統。</p>
+      <p><b>從需求到上線的完整產品落地經驗</b>在現職中具備從零到一的全端產品建置能力：透過市場分析與產品研發訪談掌握使用者需求，直接運用 AI 技術進行全端系統與 ERP 進銷存系統建置，主導從產品訪談、需求規劃到系統測試與上線的完整流程，將商業需求與技術實作串聯成具市場競爭力的產品。</p>
+      <p><b>結語</b>從 3D 動畫跨足到 AI 系統工程，我的核心競爭力在於「懂得發掘問題，並運用最新 AI 技術提供解決方案」。我不僅能獨立作業，更具備產品思維、懂管理、能溝通，期待將視覺設計、專案管理與 AI 全端開發的能量帶入團隊，共同打造兼具創新與實用價值的系統產品。</p>
+    </div>
+
+    <h2 class="r-h">EXPERIENCE <small>工作經驗・總年資 7~8 年</small></h2>
+    <div class="xp">
+
+      <div class="xp-item">
+        <div class="xp-date">2023/8<br>至今</div>
+        <div class="xp-body">
+          <div class="xp-title">Product Manager 產品經理</div>
+          <div class="xp-org">新橋創想影像科技股份有限公司</div>
+          <div class="xp-meta">電腦軟體服務業 1~30 人｜AI 工程師｜管理 4 人以下｜台北市中山區</div>
+          <div class="xp-desc"><ul>
+            <li>透過市場分析與訪談，規劃有市場競爭力的產品，並且用 AI 直接製作全端系統。</li>
+            <li>規劃並上線 慕名而來 NameGain（名片 CRM）、飛鴿傳薪 fgpay（勞務報酬單）、天天 daily（目標日記）與跨產品管理員後台。</li>
+            <li>撰寫產品規格書與 UI 設計系統，建立 QC 檢查清單與系統測試、上線流程。</li>
+          </ul></div>
+          <div class="xp-tags"><span>軟體工程系統開發</span><span>軟體品質與保證</span><span>測試環境建置規劃</span><span>使用者體驗設計</span><span>軟體專案管理</span><span>銷售業務</span></div>
+        </div>
+      </div>
+
+      <div class="xp-item">
+        <div class="xp-date">2018/8<br>2023/8<em>5 年 1 個月</em></div>
+        <div class="xp-body">
+          <div class="xp-title">製作主管</div>
+          <div class="xp-org">新橋影像設計有限公司</div>
+          <div class="xp-meta">多媒體傳播相關業 1~30 人｜經營管理主管｜管理 5~8 人｜台北市中正區</div>
+          <div class="xp-desc"><ul>
+            <li>接洽動畫業務，建立公司制度，領導中階主管。</li>
+            <li>職務分權與放權，推動部門績效與人員培育。</li>
+          </ul></div>
+          <div class="xp-tags"><span>部門績效目標管理</span><span>培育人員職涯發展</span><span>工作任務／業績項目分配</span><span>部門人力成本控制</span><span>業績目標達成</span><span>人員培訓、激勵、輔導與管理</span></div>
+        </div>
+      </div>
+
+      <div class="xp-item">
+        <div class="xp-date">2017/5<br>2018/8<em>1 年 4 個月</em></div>
+        <div class="xp-body">
+          <div class="xp-title">燈光合成組長</div>
+          <div class="xp-org">即思影像有限公司</div>
+          <div class="xp-meta">電影片製作業 30~100 人｜影片製作技術人員｜台北市內湖區</div>
+          <div class="xp-desc"><ul>
+            <li>帶領 20 人左右團隊。</li>
+            <li>專案進度管理、成本控管、工作分配。</li>
+            <li>主鏡頭製作，並設定模板給同事使用。</li>
+          </ul></div>
+        </div>
+      </div>
+
+      <div class="xp-item">
+        <div class="xp-date">2017/4</div>
+        <div class="xp-body">
+          <div class="xp-title">燈光合成師</div>
+          <div class="xp-org">冉色斯動畫股份有限公司</div>
+          <div class="xp-meta">廣播電視節目供應業 30~100 人｜多媒體動畫設計師｜新北市中和區</div>
+          <div class="xp-desc"><ul><li>戲劇、電影等作品的燈光與合成。</li></ul></div>
+        </div>
+      </div>
+
+      <div class="xp-item">
+        <div class="xp-date">2016/12<br>2017/2<em>3 個月</em></div>
+        <div class="xp-body">
+          <div class="xp-title">燈光師</div>
+          <div class="xp-org">轅年視覺創意有限公司</div>
+          <div class="xp-meta">電影片製作業 1~30 人｜多媒體動畫設計師｜台北市內湖區</div>
+          <div class="xp-desc"><ul><li>將 3D 物件用 Maya 打光並 Render（Redshift），簡單的 PA 協助。</li></ul></div>
+        </div>
+      </div>
+
+      <div class="xp-item">
+        <div class="xp-date">2015/8<br>2017/12<em>2 年 5 個月</em></div>
+        <div class="xp-body">
+          <div class="xp-title">燈光助理</div>
+          <div class="xp-org">香港商壹同樂動畫工作室</div>
+          <div class="xp-meta">電影片製作業 100~500 人｜多媒體動畫設計師｜台北市內湖區</div>
+          <div class="xp-desc"><ul><li>3D 動畫，用 Maya 打光與 Nuke、After Effects 合成；使用過 Mental Ray、V-Ray、Arnold。</li></ul></div>
+        </div>
+      </div>
+
+      <div class="xp-item">
+        <div class="xp-date">2013/7<br>2014/6<em>1 年</em></div>
+        <div class="xp-body">
+          <div class="xp-title">美術設計、多媒體設計</div>
+          <div class="xp-org">雲端線上</div>
+          <div class="xp-meta">網際網路相關業 1~30 人｜美術設計｜台北市信義區</div>
+          <div class="xp-desc"><ul>
+            <li>App 所使用的圖檔與相框主題製作。</li>
+            <li>動畫角色構思、創意發想。</li>
+            <li>2D 動畫製作。</li>
+          </ul></div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="r-h">EDUCATION <small>學歷</small></h2>
+    <div class="xp">
+      <div class="xp-item">
+        <div class="xp-date">2011/9<br>2015/6</div>
+        <div class="xp-body">
+          <div class="xp-title">私立世新大學</div>
+          <div class="xp-org">數位多媒體設計學系 動畫組</div>
+          <div class="xp-meta">大學畢業</div>
+        </div>
+      </div>
+      <div class="xp-item">
+        <div class="xp-date">2008/9<br>2011/6</div>
+        <div class="xp-body">
+          <div class="xp-title">新莊高中</div>
+          <div class="xp-org">普通科</div>
+          <div class="xp-meta">高中畢業</div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="r-h">EXPERTISE <small>專長</small></h2>
+    <div class="skill-grid">
+      <div class="skill-card"><h4>AI 與全端開發</h4><p>以 Claude、Gemini、ChatGPT 進行自動化系統設計整合；API 串接、MySQL／Supabase 資料庫建置、GCP 雲端；擅長 Three.js 與 Next.js，可製作 3D 網頁內容。</p></div>
+      <div class="skill-card"><h4>產品開發</h4><p>用 Claude 建立完整產品；從產品研發訪談到系統規劃，涵蓋自動化系統設計整合、產品開發與產品生命週期。</p></div>
+      <div class="skill-card"><h4>系統架構與資料庫</h4><p>資料庫程式設計與軟體應用、軟體程式設計、系統架構規劃、軟體工程系統開發、資料庫系統管理維護。</p></div>
+      <div class="skill-card"><h4>專案與團隊管理</h4><p>帶領約 20 人製作團隊；專案進度、成本控管與工作分配；建立公司制度、領導中階主管與跨部門溝通。</p></div>
+    </div>
+
+    <h2 class="r-h">PORTFOLIO <small>作品集</small></h2>
+    <div class="works">
+      <a class="work" href="portfolio.html#namegain"><img class="logo" src="assets/logo/namegain_logo.svg" alt=""><div><b>慕名而來 NameGain</b><span>電子名片 × AI 業務跟進 CRM</span></div></a>
+      <a class="work" href="portfolio.html#fgpay"><img class="logo" src="assets/logo/fgpay-LOGO.svg" alt=""><div><b>飛鴿傳薪 fgpay</b><span>勞務報酬單 SaaS</span></div></a>
+      <a class="work" href="portfolio.html#daily"><img class="logo" src="assets/logo/daily-icon.svg" alt=""><div><b>天天 daily</b><span>目標・定期事項・心情日記</span></div></a>
+      <a class="work" href="portfolio.html#whoo"><img src="assets/works/whoo-shot.jpg" alt=""><div><b>后 · 3D 線上展場</b><span>皇宮夏日庭院美學</span></div></a>
+      <a class="work" href="portfolio.html#might"><img class="logo" src="assets/works/might.svg" alt=""><div><b>邁特 3D 工廠</b><span>工廠空間 3D 系統</span></div></a>
+      <a class="work" href="portfolio.html#taichi"><img class="logo" src="assets/works/taichi.svg" alt=""><div><b>汰極美顏 ERP</b><span>直銷進銷存與獎金</span></div></a>
+      <a class="work" href="portfolio.html#bakery"><img src="assets/works/bakery-shot.jpg" alt=""><div><b>烘焙便利屋 ERP</b><span>電商與進銷存</span></div></a>
+      <a class="work" href="portfolio.html#tuart"><img class="logo" src="assets/works/tuart.svg" alt=""><div><b>塗藝間</b><span>3D 品牌官網</span></div></a>
+      <a class="work" href="portfolio.html#wowpaper"><img src="assets/works/wowpaper.webp" alt=""><div><b>壁紙樂園</b><span>壁紙電商官網</span></div></a>
+      <a class="work" href="portfolio.html#ymcf"><img src="assets/works/ymcf.jpg" alt=""><div><b>陽明海洋文化藝術館</b><span>展覽活動官網</span></div></a>
+      <a class="work" href="portfolio.html#odeo"><img src="assets/works/odeo.jpg" alt=""><div><b>O'deo</b><span>影像製作官網</span></div></a>
+      <a class="work" href="https://x94qo4xu6.wixsite.com/pennylai" target="_blank" rel="noopener"><img class="logo" src="assets/works/animation.svg" alt=""><div><b>動畫作品經歷</b><span>影視動畫作品集</span></div></a>
+    </div>
+    <a class="to-pf" href="portfolio.html">查看完整作品集 →</a>
+  </div>
+</article>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>© 2026 賴佩伶 Penny Lai</span>
+    <span><a href="portfolio.html">作品集 →</a></span>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,82 @@
+/* 作品大圖卡輪播 + 詳細內容視窗（綠 × 咖啡復古） */
+.works-stage{position:relative;padding:54px 0 40px;background:radial-gradient(120% 90% at 50% 40%,#4a6040 0%,#33452c 50%,#202b1b 100%);overflow:hidden}
+.works-stage::before{content:"";position:absolute;inset:14px;border:3px double rgba(201,167,124,.45);pointer-events:none}
+.works-head{text-align:center;color:#fbf3e2;position:relative;z-index:2;margin-bottom:18px}
+.works-head h1{font-family:"Noto Serif TC",Georgia,serif;font-weight:900;letter-spacing:.16em;font-size:clamp(26px,3.6vw,40px);margin:0}
+.works-head p{color:#e3c08f;letter-spacing:.3em;font-size:12px;margin-top:6px;font-family:"Noto Serif TC",Georgia,serif}
+
+.cf{position:relative;height:clamp(420px,58vw,600px);perspective:1600px;touch-action:pan-y;user-select:none;-webkit-user-select:none}
+.cf-card{position:absolute;left:50%;top:0;width:min(760px,74vw);margin-left:calc(min(760px,74vw) / -2);background:#fbf6ea;border-radius:4px;padding:10px 10px 0;
+  box-shadow:0 26px 60px rgba(0,0,0,.5);transition:transform .7s cubic-bezier(.2,.7,.2,1),opacity .7s,filter .7s;cursor:pointer;outline:none}
+.cf-card .cf-media{position:relative;aspect-ratio:16/10;overflow:hidden;background:#e9dfcc;border:1px solid #e6d9c3}
+.cf-card .cf-media img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.cf-card .cf-ph{position:absolute;inset:0;display:grid;place-items:center;text-align:center;background:repeating-linear-gradient(45deg,#efe4cc 0 14px,#e9dcc0 14px 28px);color:#6b4528;font-family:"Noto Serif TC",Georgia,serif}
+.cf-card .cf-ph b{display:block;font-size:clamp(22px,3vw,34px);letter-spacing:.08em}
+.cf-card .cf-ph small{display:block;color:#55704a;letter-spacing:.2em;margin-top:6px}
+.cf-card .cf-live{position:absolute;left:10px;top:10px;background:rgba(63,82,54,.92);color:#fbf3e2;font-size:11px;letter-spacing:.16em;padding:3px 8px;border-radius:2px;font-family:"Noto Serif TC",Georgia,serif}
+.cf-cap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 8px 16px}
+.cf-cap .no{font-family:"Noto Serif TC",Georgia,serif;color:#55704a;letter-spacing:.2em;font-size:12px}
+.cf-cap h2{font-family:"Noto Serif TC",Georgia,serif;color:#6b4528;font-size:clamp(18px,2.2vw,24px);font-weight:900;margin:2px 0 0}
+.cf-cap p{color:#7a6a5a;font-size:14px;margin-top:2px}
+.cf-cap .go{flex:none;background:#3f5236;color:#fbf3e2;font-family:"Noto Serif TC",Georgia,serif;font-size:14px;padding:9px 16px;border-radius:3px;white-space:nowrap}
+.cf-card:not(.on) .go{visibility:hidden}
+.cf-card:focus-visible{box-shadow:0 0 0 3px #c9a77c,0 26px 60px rgba(0,0,0,.5)}
+
+.cf-nav{position:absolute;top:calc(clamp(420px,58vw,600px) / 2 - 30px);z-index:50;width:48px;height:48px;border-radius:50%;border:2px solid #c9a77c;background:rgba(251,246,234,.95);color:#6b4528;font-size:22px;cursor:pointer;display:grid;place-items:center}
+.cf-nav:hover{background:#c9a77c;color:#fbf3e2}
+.cf-prev{left:28px}.cf-next{right:28px}
+.cf-dots{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:6px;position:relative;z-index:2;padding:0 24px}
+.cf-dots button{border:1px solid rgba(201,167,124,.6);background:transparent;color:#e9dcc0;font-family:"Noto Serif TC",Georgia,serif;font-size:12.5px;padding:4px 10px;border-radius:2px;cursor:pointer}
+.cf-dots button.on{background:#c9a77c;color:#2c3a26;border-color:#c9a77c}
+
+/* 詳細視窗 */
+.wm{position:fixed;inset:0;z-index:200;background:rgba(32,43,27,.78);display:none;align-items:flex-start;justify-content:center;overflow-y:auto;padding:0 16px}
+.wm.open{display:flex}
+body.wm-lock{overflow:hidden}
+.wm-sheet.folio{margin:40px auto;width:min(1080px,100%);position:relative;animation:wmIn .35s ease}
+@keyframes wmIn{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.wm-bar{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 18px;background:#3f5236;color:#fbf3e2}
+.wm-bar span{font-family:"Noto Serif TC",Georgia,serif;letter-spacing:.14em;font-size:13px;color:#e3c08f}
+.wm-bar .btns{display:flex;gap:8px}
+.wm-bar button{border:1px solid rgba(201,167,124,.7);background:transparent;color:#fbf3e2;border-radius:3px;padding:6px 12px;cursor:pointer;font-family:"Noto Serif TC",Georgia,serif;font-size:13px}
+.wm-bar button:hover{background:#c9a77c;color:#2c3a26}
+.wm-body .product{border-bottom:0;padding-top:40px}
+#works-data{display:none}
+
+/* 運作中 GIF 區塊 */
+.live-shot{border:1px solid var(--rule,#d6c4a6);outline:4px double var(--rule,#d6c4a6);outline-offset:4px;background:#fdf9f0;padding:8px;cursor:zoom-in}
+.live-shot img{width:100%;display:block}
+.live-shot figcaption{text-align:center;font-family:"Noto Serif TC",Georgia,serif;color:#6b4528;padding:10px 0 4px;font-size:14px}
+.lb{z-index:300}
+
+@media(max-width:760px){
+  .cf-nav{display:none}
+  .cf-cap{flex-direction:column;align-items:flex-start}
+  .wm{padding:0}
+  .wm-sheet.folio{min-height:100%;margin:0 auto}
+}
+@media(prefers-reduced-motion:reduce){.cf-card{transition:none}.wm-sheet.folio{animation:none}}
+
+/* 作品總覽條列（聯絡區塊下方） */
+.wl{margin-top:48px}
+.wl-h{font-family:"Noto Serif TC",Georgia,serif;color:#6b4528;font-size:20px;letter-spacing:.08em;padding-bottom:6px;border-bottom:3px double #d6c4a6;margin:0 0 6px;display:flex;align-items:center;gap:10px}
+.wl-h i{font-style:normal;font-size:12px;letter-spacing:.2em;color:#55704a}
+.wl-list{list-style:none;margin:0;padding:0}
+.wl-item{display:grid;grid-template-columns:64px 168px 1fr auto;gap:18px;align-items:center;padding:16px 4px;border-bottom:1px solid #e6d9c3;cursor:pointer;transition:background .2s}
+.wl-item:hover{background:#f3e8d2}
+.wl-no{font-family:"Noto Serif TC",Georgia,serif;color:#55704a;font-size:22px;font-weight:700;text-align:center}
+.wl-thumb{aspect-ratio:16/10;background:repeating-linear-gradient(45deg,#efe4cc 0 10px,#e9dcc0 10px 20px);border:1px solid #d6c4a6;padding:4px;background-clip:content-box;overflow:hidden}
+.wl-thumb img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.wl-name{font-family:"Noto Serif TC",Georgia,serif;color:#6b4528;font-size:18px;font-weight:900}
+.wl-sub{color:#55704a;font-size:13.5px;font-weight:700;margin-top:2px}
+.wl-tag{color:#7a6a5a;font-size:14px;margin-top:4px}
+.wl-meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.wl-meta span,.wl-meta a{font-size:12px;padding:2px 8px;border-radius:3px;border:1px solid #d6c4a6;color:#6b4528;background:#fbf6ea}
+.wl-meta a{background:#e4e9d6;color:#3f5236;border-color:transparent}
+.wl-go{font-family:"Noto Serif TC",Georgia,serif;color:#3f5236;font-weight:700;white-space:nowrap;font-size:14px}
+@media(max-width:760px){
+  .wl-item{grid-template-columns:44px 1fr;gap:12px}
+  .wl-thumb{grid-column:2}
+  .wl-go{grid-column:2}
+  .wl-no{grid-row:1/3;align-self:start}
+}
