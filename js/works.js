@@ -81,7 +81,10 @@
   function open(i) {
     close(true);
     opened = i; cur = i; layout();
-    wmBody.appendChild(secs[i]);
+    // 複製一份放進視窗，頁面最下方的作品內容保持原位
+    var copy = secs[i].cloneNode(true);
+    copy.removeAttribute('id');
+    wmBody.appendChild(copy);
     wmNo.textContent = 'No. ' + ('0' + (i + 1)).slice(-2) + ' / ' + ('0' + secs.length).slice(-2);
     wm.classList.add('open'); document.body.classList.add('wm-lock');
     wm.scrollTop = 0;
@@ -89,7 +92,7 @@
     wm.querySelector('.wm-close').focus();
   }
   function close(keep) {
-    if (opened >= 0) { data.appendChild(secs[opened]); opened = -1; }
+    if (opened >= 0) { wmBody.innerHTML = ''; opened = -1; }
     if (keep === true) return;
     wm.classList.remove('open'); document.body.classList.remove('wm-lock');
     history.replaceState(null, '', location.pathname);
@@ -142,7 +145,7 @@
   var lb = document.getElementById('lb'), lbImg = lb.querySelector('img'), lbCap = lb.querySelector('p');
   document.addEventListener('click', function (e) {
     var el = e.target.closest('.gallery figure,[data-lb],.live-shot');
-    if (!el || !wm.contains(el)) return;
+    if (!el || !(wm.contains(el) || data.contains(el))) return;
     var im = el.querySelector('img'); if (!im) return;
     lbImg.src = im.src;
     var c = el.querySelector('figcaption'); lbCap.textContent = c ? c.textContent : (im.alt || '');

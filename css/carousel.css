@@ -41,7 +41,10 @@ body.wm-lock{overflow:hidden}
 .wm-bar button{border:1px solid rgba(201,167,124,.7);background:transparent;color:#fbf3e2;border-radius:3px;padding:6px 12px;cursor:pointer;font-family:"Noto Serif TC",Georgia,serif;font-size:13px}
 .wm-bar button:hover{background:#c9a77c;color:#2c3a26}
 .wm-body .product{border-bottom:0;padding-top:40px}
-#works-data{display:none}
+#works-data{display:block;border-top:3px double #d6c4a6}
+.wd-head{padding:46px 0 0}
+.wd-head .wl-h{margin:0}
+#works-data .product{scroll-margin-top:70px}
 
 /* 運作中 GIF 區塊 */
 .live-shot{border:1px solid var(--rule,#d6c4a6);outline:4px double var(--rule,#d6c4a6);outline-offset:4px;background:#fdf9f0;padding:8px;cursor:zoom-in}
